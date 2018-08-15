@@ -154,9 +154,9 @@ public class demoQAtest {
         autoComplete auto = PageFactory.initElements(driver, autoComplete.class);
         auto.sendText();
         WebElement dynamicElement = (new WebDriverWait(driver, 5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"ui-id-1\"]")));
-        action.sendKeys(Keys.ARROW_DOWN);
-        action.sendKeys(Keys.ENTER);
-        assertEquals("ActionScript", driver.findElement(By.xpath("//*[@id=\"tagss\"]")).getText());
+        action.sendKeys(Keys.ARROW_DOWN).perform();
+        action.sendKeys(Keys.ENTER).perform();
+        assertEquals("ActionScript", driver.findElement(By.xpath("//*[@id=\"tagss\"]")).getAttribute("value"));
 
     }
 }

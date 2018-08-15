@@ -27,25 +27,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8561" />
+          <entry key="java" value="8587" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8561" />
+          <entry key="JAVA" value="8587" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="54" />
+          <entry key="java" value="55" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="54" />
+          <entry key="JAVA" value="55" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -129,26 +129,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/demoQAtest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="151" column="45" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="45" />
+            <state relative-caret-position="380">
+              <caret line="157" column="46" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#563#564#0" expanded="true" />
                 <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#736#737#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTest2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -269,7 +257,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534328765944" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534329348978" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/git-cmd.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -364,18 +352,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="demoQAtest - 2018.08.14 at 17h 08m 23s.xml">
-      <configuration name="demoQAtest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="demoQAtest - 2018.08.14 at 17h 09m 55s.xml">
-      <configuration name="demoQAtest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="demoQAtest - 2018.08.14 at 17h 13m 31s.xml">
-      <configuration name="demoQAtest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="demoQAtest - 2018.08.14 at 17h 24m 56s.xml">
-      <configuration name="demoQAtest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="demoQAtest - 2018.08.14 at 17h 26m 30s.xml">
       <configuration name="demoQAtest" configurationId="JUnit" />
     </history-entry>
@@ -394,12 +370,24 @@
     <history-entry file="demoQAtest - 2018.08.15 at 10h 50m 27s.xml">
       <configuration name="demoQAtest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="demoQAtest - 2018.08.15 at 11h 27m 14s.xml">
+      <configuration name="demoQAtest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="demoQAtest - 2018.08.15 at 11h 32m 36s.xml">
+      <configuration name="demoQAtest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="demoQAtest - 2018.08.15 at 11h 33m 41s.xml">
+      <configuration name="demoQAtest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="demoQAtest - 2018.08.15 at 11h 35m 26s.xml">
+      <configuration name="demoQAtest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10927505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10927505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -408,7 +396,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2624729" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2624729" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/demoQAtest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="151" column="45" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="45" />
+        <state relative-caret-position="380">
+          <caret line="157" column="46" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#563#564#0" expanded="true" />
