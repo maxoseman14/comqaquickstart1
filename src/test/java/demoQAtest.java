@@ -107,10 +107,15 @@ public class demoQAtest {
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[5]")).getAttribute("class").contains("ui-selected"));
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[6]")).getAttribute("class").contains("ui-selected"));
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[7]")).getAttribute("class").contains("ui-selected"));
+
+        String xpath = "";
+        int i = Integer.parseInt(String.valueOf(xpath.charAt(28)));
     }
 
+
+
     @Test
-    public void accordionSections () throws InterruptedException {
+    public void accordionSections () {
         selectAccordion();
         AccordionWidget accordion = PageFactory.initElements(driver, AccordionWidget.class);
         accordion.openSection1();
@@ -123,9 +128,10 @@ public class demoQAtest {
         assertTrue(driver.findElement(By.xpath("//*[@id=\"ui-id-11\"]")).getAttribute("aria-hidden").contains("false"));
     }
 
-    //@Test
-    //public void autocomplete (){
+    @Test
+    public void autocomplete (){
 
-    //}
+
+    }
 }
 
