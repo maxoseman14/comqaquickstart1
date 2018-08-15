@@ -3,8 +3,13 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -60,6 +65,13 @@ public class demoQAtest {
         main.clickAccordion();
     }
 
+    public void selectAutocomplete (){
+        driver.get("http://demoqa.com/");
+        demoQAmain main = PageFactory.initElements(driver, demoQAmain.class);
+        main.clickAutoComplete();
+    }
+
+    @Ignore
     @Test
     public void moveBox (){
         test = reports.startTest("move box");
@@ -75,6 +87,7 @@ public class demoQAtest {
         assertTrue(droppable.checkDrop());
     }
 
+    @Ignore
     @Test
     public void selectItems (){
         test = reports.startTest("select item");
@@ -95,6 +108,7 @@ public class demoQAtest {
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[7]")).getAttribute("class").contains("ui-selected"));
     }
 
+    @Ignore
     @Test
     public void dragOver () {
         selectable();
@@ -108,12 +122,17 @@ public class demoQAtest {
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[6]")).getAttribute("class").contains("ui-selected"));
         assertTrue(driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[7]")).getAttribute("class").contains("ui-selected"));
 
-        String xpath = "";
-        int i = Integer.parseInt(String.valueOf(xpath.charAt(28)));
+      /*  String xpath = "\"//*[@id=\\\"selectable\\\"]/li[x]";
+        int num = Integer.parseInt(String.valueOf(xpath.charAt(28)));
+
+        for (int i = 1; i <= 7 ; i++) {
+            num = i;
+            assertTrue(driver.findElement(By.));
+        } */
     }
 
 
-
+    @Ignore
     @Test
     public void accordionSections () {
         selectAccordion();
@@ -129,8 +148,15 @@ public class demoQAtest {
     }
 
     @Test
-    public void autocomplete (){
-
+    public void autocomplete () {
+        Actions action = new Actions(driver);
+        selectAutocomplete();
+        autoComplete auto = PageFactory.initElements(driver, autoComplete.class);
+        auto.sendText();
+        WebElement dynamicElement = (new WebDriverWait(driver, 5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"ui-id-1\"]")));
+        action.sendKeys(Keys.ARROW_DOWN);
+        action.sendKeys(Keys.ENTER);
+        assertEquals("ActionScript", driver.findElement(By.xpath("//*[@id=\"tagss\"]")).getText());
 
     }
 }
